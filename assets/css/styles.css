@@ -137,8 +137,8 @@ p {
 }
 
 .header__brand .brand__logo {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 #toggleTheme {
@@ -301,7 +301,8 @@ main {
 }
 
 .technologies__logo {
-  height: 2.4rem;
+  height: 3rem;
+  max-width: 3rem;
 }
 
 .projects {
@@ -393,6 +394,12 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+}
+
+.about__content1{
+  align-items: center;
+  align-content: center;
+  
 }
 
 .about__photo {
@@ -542,7 +549,7 @@ footer p {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -567,8 +574,8 @@ footer p {
   }
 
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
+    padding: 4rem 6rem 2rem 6rem;
+    margin-top: -2rem;
   }
 
   footer {
@@ -602,8 +609,17 @@ footer p {
     gap: 4rem;
   }
 
+  .about__content1{
+    display: grid;
+    grid-template-columns: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
   .about__description h2 {
-    text-align: left;
+    text-align: center;
   }
 
   .description__buttons {
@@ -618,7 +634,7 @@ footer p {
   }
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   main {
@@ -630,14 +646,15 @@ footer p {
   }
 
   .technologies {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 10rem 6rem 4rem;
+    padding: 6rem 6rem 4rem;
+    margin-top: 1rem;
   }
 
   .technologies h2 {
     font-size: 3rem;
-    width: 55%;
+    /* width: 55%; */
   }
 
   .technologies__list {
