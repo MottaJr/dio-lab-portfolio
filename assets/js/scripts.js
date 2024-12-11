@@ -23,6 +23,18 @@ accordionHeaders.forEach(header => {
   })
 })
 
+console.log(localStorage.valor);
+if(localStorage.valor){
+  rootHtml.setAttribute("data-theme", localStorage.valor);
+}
+var salvarData = function () {
+  var tema = rootHtml.getAttribute("data-theme");
+    localStorage.setItem('valor', tema);
+  }
+  
+document.onclick = salvarData;
+
+
 menuLinks.forEach(item => {
   item.addEventListener("click", () => {
     menuLinks.forEach(i => i.classList.remove("active"));
